@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/q2a.css" />
+</head>
+<body>
+    <div class="header-div">
+        <table class="header-table">
+            <tr>
+                <td rowspan="2">
+                    <img class="logo" src="./Images/Logo.png" alt="logo" />
+                </td>
+                <td>
+                    <h1 class="header">Open University Running Club</h1>
+                </td>
+                <td class="float-right">
+                    <table class="login-table">
+                        <tr>
+                            <td>
+                                <label>User Name</label>
+                            </td>
+                            <td>
+                                <input placeholder="text" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Password</label>
+                            </td>
+                            <td>
+                                <input placeholder="*********" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button>Sign Up</button>
+                                <button>Log IN</button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="nav-menu">
+                        <button>Home</button>
+                        <button>News</button>
+                        <button>Events</button>
+                        <button>Add Run</button>
+                        <button>Contact us</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div> 
+    <div class="center-div">
+        <img class="background-picture" src="./Images/background.jpg" alt="background picture" />
+    </div>
+    <div>
+        <table class="form-div-table">
+            <tr>
+                <td>
+                    <div class="side-pics-div">
+                        <img class="side-pic-one" src="./Images/side-img-1.jpg" alt="side-pic-one" />
+                        <img class="side-pic-two" src="./Images/side-img-2.jpg" alt="side-pic-two" />
+                    </div>
+                </td>
+                <td>
+                    <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="post">
+                        <table class="form-table">
+                            <tr>
+                                <td>
+                                    <label>Name</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="name">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Date</label>
+
+                                </td>
+                                <td>
+                                    <input type="date" class="date" name="date">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Start Time</label>
+                                </td>
+                                <td>
+                                    <input type="time" class="starttime" name="starttime">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Meeting Point</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="location">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Distance In Miles</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="distance">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Notes</label>
+                                </td>
+                                <td>
+                                    <input type="text" name="notes">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label>Status</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="approved" name="status" value="approved">
+                                    <label for="approved">Approved</label>
+                                    <input type="radio" id="rejected" name="status" value="rejected">
+                                    <label for="rejected">Rejected</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input hidden="hidden" id="sessionID" name="sessionID" value="12345678-09ab-1111-cdef" />
+                                </td>
+                                <td>
+                                    <input type="submit">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+                <td>
+                    <div id="mycalendar"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer-div">
+        <div class="footer">
+            <label>Copyright Open University Running club 2020 all rights reserved</label>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Events</a>
+            <a href="#">Add Run</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
